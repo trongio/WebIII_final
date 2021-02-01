@@ -1,5 +1,5 @@
 const apikey = "69c705dcb2f4447eb72181420213101";
-
+let id=0;
 const main = document.getElementById("main");
 
 const addbtn = document.getElementById("add");
@@ -23,10 +23,6 @@ cancelbtn.addEventListener("click", ()=>{
     inputdiv.classList.add('hidden');
 })
 
-function del(item){
-    item.remove();
-}
-
 async function search(url){
 
 
@@ -46,34 +42,45 @@ function addweather(response){
 
     var main=document.createElement('div');
     main.classList.add('weatherwrapper');
+    main.id=id;
 
     main.innerHTML= `
-       <span onclick="del(${main})" style="color: red">X</span>
+       <span class="hidden" id="span-${id}" onclick="del(${id})" style="color: red">X</span>
        <h5 class="weather" >${temp}°C ${name}</h5>
     `
 
     grid.appendChild(main);
     updateLS()
+    id++
 }
 
 function localaddweather(text){
-    console.log(text)
-
     var main=document.createElement('div')
+    main.id=text.id;
+    main.classList.add('weatherwrapper');
     main.innerHTML= `
-       <span onclick="del(${main})" style="color: red">X</span>
+       <span class="hidden" id="span-${text.id}"  onclick="del(${text.id})" style="color: red">X</span>
        <h5 class="weather">${text.text}</h5>
     `
     grid.appendChild(main);
+    id++
 }
 
 
-const weathers = JSON.parse(localStorage.getItem("weather"));
+let weathers = JSON.parse(localStorage.getItem("weather"));
 
 if (weathers) {
     weathers.forEach((weather) => {
         localaddweather(weather);
     });
+    console.log(weathers)
+}
+
+function del(id){
+    var delitem=document.getElementById(id)
+    weathers.splice(id, 1);
+    delitem.remove();
+    console.log(weathers)
 }
 
 function updateLS() {
@@ -85,6 +92,7 @@ function updateLS() {
     weatherEls.forEach((weatherEl) => {
         weather.push({
             text: weatherEl.innerText,
+            id: id
         });
     });
 
@@ -92,3 +100,15 @@ function updateLS() {
 
     localStorage.setItem("weather", JSON.stringify(weather));
 }
+
+function weatherhover(){
+    var weatherwrapper=Array.from(document.getElementsByClassName("weatherwrapper")) ;
+    weatherwrapper.forEach(wrapper =>{
+        wrapper.addEventListener("mouseover",()=>{
+            let span= document.getElementById(`span-${wrapper.id}`)
+            span.classList.remove('hidden');
+        })
+    })
+}
+
+weatherhover()
