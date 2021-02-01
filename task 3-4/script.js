@@ -1,4 +1,5 @@
 async function search(){
+    let sum=0;
 
     var url = `https://next.json-generator.com/api/json/get/VkBw8XP2d`;
 
@@ -22,13 +23,13 @@ async function search(){
             console.log(JSON.stringify(user))
         }
 
-        if(user.company==="Google" && user.cpuntry==="UK" && user.department==="sales"){
-            console.log(`google uk sales:`)
-            console.log(user.email)
-            console.log(user.name.first)
-            console.log(user.dob)
+        if(user.company==="Apple" && user.cpuntry==="USA" ){
+
+            sum=user.sasalary + sum
         }
     })
+    console.log("apple usa salary")
+    console.log(sum)
 }
 
 search()
