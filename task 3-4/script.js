@@ -27,6 +27,11 @@ async function search(){
 
             sum=user.sasalary + sum
         }
+        if(user.company==="Apple" && user.cpuntry==="USA" ){
+
+            console.log(`HR 500 000:`)
+            console.log(JSON.stringify(user))
+        }
     })
     console.log("apple usa salary")
     console.log(sum)
