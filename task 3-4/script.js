@@ -21,6 +21,13 @@ async function search(){
             console.log(`HR 500 000:`)
             console.log(JSON.stringify(user))
         }
+
+        if(user.company==="Google" && user.cpuntry==="UK" && user.department==="sales"){
+            console.log(`google uk sales:`)
+            console.log(user.email)
+            console.log(user.name.first)
+            console.log(user.dob)
+        }
     })
 }
 
