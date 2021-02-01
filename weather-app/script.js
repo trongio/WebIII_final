@@ -8,6 +8,8 @@ const cancelbtn = document.getElementById("cancel");
 const inputdiv= document.getElementById("input");
 const grid=document.getElementById("grid");
 
+console.log(inputdiv)
+
 addbtn.addEventListener("click", ()=>{
     inputdiv.classList.remove('hidden');
 })

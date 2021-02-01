@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c62f128-94dd-4ed2-bc39-f8428ba4aaf5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task 3-4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/task 3-4/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/script.js" afterDir="false" />
     </list>
@@ -37,11 +38,14 @@
       <recent name="C:\Users\1\Desktop\WebIII_final\task 1 - countdown timer" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
+  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebIII_final/task 2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebIII_final/weather-app/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebIII_final/task 3-4/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebIII_final/task 1 - countdown timer/index.html" useBuiltInWebServerPort="true">
@@ -49,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -63,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612189025576</updated>
-      <workItem from="1612189026918" duration="10486000" />
+      <workItem from="1612189026918" duration="11485000" />
     </task>
     <servers />
   </component>
